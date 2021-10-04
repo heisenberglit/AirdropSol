@@ -13,6 +13,11 @@ export const convertToCompatibleFormat = (pathToFile)  => {
       c.count = list[item]['mintTokens'].length;
       data.push(c)
     }
+
+    if (!fs.existsSync("./results")) {
+        fs.mkdirSync("./results");
+      }
+      
     fs.writeFileSync("./results/airdrop_pubKeys.json", JSON.stringify(data));
 }
 
