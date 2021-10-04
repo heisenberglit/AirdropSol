@@ -53,6 +53,7 @@ async function processChunk() {
             setTimeout(() => {},2000);
      }  
       catch(ex) {
+        console.log("Error : "+ ex);
           var err = {};
           //@ts-ignore
           err.signature = signature;
