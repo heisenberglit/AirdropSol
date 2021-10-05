@@ -40,7 +40,7 @@ This has been tested on Devnet only.
 - send_sol - To airdrop users SOL based on NFTs they have. Enter the price in this command which we got from calculate_per_wallet_drop.
 
 
-## Commands : 
+## Commands
 
 ```nodejs
 1. node build/cli.js create_compatible_format -p {FILE_PATH} <br/>
