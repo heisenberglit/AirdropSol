@@ -34,6 +34,16 @@ This has been tested on Devnet only.
             Digital Eyes -  F4ghBzHFNgJxV4wEQDchU5i7n4XWWMBSaq7CuswGiVsr<br/>
             Magic Eden - GUfCR9mK6azb9vcpsxgXyj7XRPAKJd4KMHTTVvtncGgp<br/>
             Solanart -3D49QorJyNaL4rcpiynbuS3pRH4Y7EXEM6v6ZGaqfFGK<br/><br/>
+  Like this and add addresses which you don't want to aidrop into this file
+  
+ ```json
+            [
+                   "F4ghBzHFNgJxV4wEQDchU5i7n4XWWMBSaq7CuswGiVsr",
+                   "GUfCR9mK6azb9vcpsxgXyj7XRPAKJd4KMHTTVvtncGgp",
+                   "3D49QorJyNaL4rcpiynbuS3pRH4Y7EXEM6v6ZGaqfFGK"
+            ]
+ ```
+         
 - count_wallets - Counts the total number of users which are getting airdropped
 - calculate_per_wallet_drop - Calculate the number which each wallet will get generally its  (ROYALTY_WALLET_BALANCE / No. Of Items) In SOL
 - verify_balance - Just for verification
