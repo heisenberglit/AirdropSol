@@ -16,8 +16,12 @@ Need to work upon -
 
 This has been tested on Devnet only. 
 
-Issues :
-- Mainnet-Beta throws some error sometimes related to Node is behind 204 slots
+
+Must have installed : 
+
+Solana CLI
+NodeJS
+
 
 How to use :
 
