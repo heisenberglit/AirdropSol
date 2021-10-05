@@ -45,7 +45,7 @@ Commands :
 5. node  build/cli.js count_wallets
 6. node build/cli.js calculate_per_wallet_drop -k {WALLET_PATH} -e "devnet"<br/>
 7. node build/cli.js verify_balance -k {WALLET_PATH} -e "devnet"<br/>
-8. node build/cli.js send_sol -p  "0.00165" -k {WALLET_PATH} <br/>
+8. node build/cli.js send_sol -p  {PRICE_PER_WALLET_PER_ITEM} -k {WALLET_PATH} <br/>
 
 For Logging :
 
