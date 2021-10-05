@@ -7,7 +7,7 @@ Contact [@statikdev](https://twitter.com/statikdev) for snapshot of wallets for 
 
 Usecase - If you have a royalty wallet for NFT holders and have snapshot of wallets taken and wants to airdrop SOL then use this repo.
 
-This has been tested on Devnet only. 
+This has been tested on Devnet and Mainnet both but I would recommend you to first do the setup and try on devnet and then try on mainnet. 
 
 
 ## Must have installed
