@@ -5,6 +5,9 @@ A NodeJS Application to airdrop SOL to users wallet based on NFTs Count for a pa
 Contact @statikdev for snapshot of wallets for a particular collection<br/><br/>
 
 
+Usecase - If you have a royalty wallet for NFT holders and have snapshot of wallets taken and wants to airdrop SOL then use this repo.
+
+
 Need to work upon - 
 - Better error handling 
 - Create a file for all failed txn
