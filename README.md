@@ -53,14 +53,14 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
 ## Commands
 
 ```nodejs
-1. node build/cli.js create_compatible_format -p {FILE_PATH} <br/>
-2. node build/cli.js count_total_items<br/>
-3. node build/cli.js remove_from_list -r {FILE_PATH} <br/>
-4. node build/cli.js count_total_items<br/>
+1. node build/cli.js create_compatible_format -p {FILE_PATH}
+2. node build/cli.js count_total_items
+3. node build/cli.js remove_from_list -r {FILE_PATH}
+4. node build/cli.js count_total_items
 5. node  build/cli.js count_wallets
-6. node build/cli.js calculate_per_wallet_drop -k {WALLET_PATH} -e "devnet"<br/>
-7. node build/cli.js verify_balance -k {WALLET_PATH} -e "devnet"<br/>
-8. node build/cli.js send_sol -p  {PRICE_PER_WALLET_PER_ITEM} -k {WALLET_PATH} <br/>
+6. node build/cli.js calculate_per_wallet_drop -k {WALLET_PATH} -e "devnet"
+7. node build/cli.js verify_balance -k {WALLET_PATH} -e "devnet"
+8. node build/cli.js send_sol -p  {PRICE_PER_WALLET_PER_ITEM} -k {WALLET_PATH}
 
 ```
 
