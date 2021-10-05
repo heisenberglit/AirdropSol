@@ -21,6 +21,10 @@ This has been tested on Devnet only.
 - yarn 
 - yarn build
 
+- Solana config get - To check which RPC you are connected to
+- Solana config set --url "mainnet-beta" - To connect to mainnet for usage
+- Solana config set --url "devnet" - To connect to devnet for usage
+
 
 ## How to use commands
 
@@ -55,7 +59,7 @@ This has been tested on Devnet only.
 - A results folder would be created which contains the response.json which have all the failed and success tx with signature.
  
  
-  Contents of response.json file for Success :
+  Contents of response.json file :
    ```json
   
    [{
@@ -63,13 +67,8 @@ This has been tested on Devnet only.
         "price": 0.01,
         "signature": "\nSignature: 3rtUax1eDJr6w8TJv35cE26qjuvpGfTwGC3xy8MbkEGo9iQeZvVyujpQtDpg6kSuKQxhNYWV3iLXe7TvCPanAmNz\n\n",
         "isSuccess": true
-    }]
-    ```
-    Contents of response.json file for Failure :<br/>
-  
-  ```json
-    
-   [{
+    },
+    {
         "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",
         "price": 0.000030000000000000004,
         "error": "Command failed: solana transfer -k ./wallet/wallet.json 3tLbZqkECtj66aaLizJUusqbikMNtdi86iSey56L5eEA 4 
@@ -91,5 +90,8 @@ This has been tested on Devnet only.
     
  ## Tip
  
-  If you found out it useful :  Send a tip to  - 87LZXRGmK5h6FCbaS9gHXZZQMaU7BKFEN5rQkRB1NeyT (SOLANA ADDRESS)
+  If you found out it useful :  
+  ```bash
+  solana transfer -k <PATH_TO_YOUR_WALLET_KEYPAIR> 87LZXRGmK5h6FCbaS9gHXZZQMaU7BKFEN5rQkRB1NeyT <AMOUNT> 
+  ```
    
