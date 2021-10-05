@@ -29,6 +29,12 @@ export const totalItemCounts = () => {
       }, 0))
 }
 
+export const countTotalWallet = () => {
+    var data = JSON.parse(fs.readFileSync('./results/airdrop_pubKeys.json', {encoding:'utf8', flag:'r'}));
+    //@ts-ignore
+    console.log("Total wallets to be airdropped : " + data.length);
+}
+
 
 export const removeFromList = (pathToFile) => {
     var removeData = JSON.parse(fs.readFileSync(pathToFile, {encoding:'utf8', flag:'r'}));

@@ -8,7 +8,8 @@ import {
     removeFromList,
     calculatePerWallet,
     verifyBalance,
-    sendSolToWallet
+    sendSolToWallet,
+    countTotalWallet
 } from './handler'
 
 import { processAirdrop }  from './giveaway-token';
@@ -31,6 +32,10 @@ programCommand('count_total_items').action(async (directory, cmd) => {
     totalItemCounts();
 });
 
+programCommand('count_wallets').action(async (directory, cmd) => {
+  countTotalWallet();
+});
+
 programCommand('remove_from_list').option(
     '-r, --path <path>',
     `Path to file`,
@@ -49,6 +54,7 @@ programCommand('verify_balance').action(async (directory, cmd) => {
     const { path, keypair, env } = cmd.opts();
     verifyBalance(keypair,env);
 });
+
 
 programCommand('do_airdrop').option(
     '-p, --price <string>',
