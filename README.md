@@ -7,29 +7,22 @@ Contact @statikdev for snapshot of wallets for a particular collection<br/><br/>
 
 Usecase - If you have a royalty wallet for NFT holders and have snapshot of wallets taken and wants to airdrop SOL then use this repo.
 
-
-Need to work upon - 
-- Better error handling 
-- Create a file for all failed txn
-- Use sendTransactionWithRetry
-
-
 This has been tested on Devnet only. 
 
 
-Must have installed : <br/>
+## Must have installed
 
 Solana CLI<br/>
 NodeJS<br/>
 
 
-How to use :
+## How to use
 
 - yarn 
 - yarn build
 
 
-How to use commands :
+## How to use commands
 
 - create_compatible_format -Contact @statikdev for snaphot for the particular collection and then create a folder and use that path to create a compatible format to airdrop.
 - count_total_items - Counts the total number of items which is generally equals to collection size
@@ -43,8 +36,9 @@ How to use commands :
 - send_sol - To airdrop users SOL based on NFTs they have. Enter the price in this command which we got from calculate_per_wallet_drop.
 
 
-Commands : 
+## Commands : 
 
+```nodejs
 1. node build/cli.js create_compatible_format -p {FILE_PATH} <br/>
 2. node build/cli.js count_total_items<br/>
 3. node build/cli.js remove_from_list -r {FILE_PATH} <br/>
@@ -54,26 +48,48 @@ Commands :
 7. node build/cli.js verify_balance -k {WALLET_PATH} -e "devnet"<br/>
 8. node build/cli.js send_sol -p  {PRICE_PER_WALLET_PER_ITEM} -k {WALLET_PATH} <br/>
 
-For Logging :
+```
+
+## Logging
 
 - A results folder would be created which contains the response.json which have all the failed and success tx with signature.
+ 
+ 
+  Contents of response.json file for Success :
+   ```json
   
-  Contents of response.json file for Success :<br/>
-  
-   {<br/>
-        "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",<br/>
-        "price": 0.000030000000000000004,<br/>
-        "signature": "\nSignature: 3rtUax1eDJr6w8TJv35cE26qjuvpGfTwGC3xy8MbkEGo9iQeZvVyujpQtDpg6kSuKQxhNYWV3iLXe7TvCPanAmNz\n\n",<br/>
-        "isSuccess": true<br/>
-    }<br/>
-    
+   {
+        "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",
+        "price": 0.01,
+        "signature": "\nSignature: 3rtUax1eDJr6w8TJv35cE26qjuvpGfTwGC3xy8MbkEGo9iQeZvVyujpQtDpg6kSuKQxhNYWV3iLXe7TvCPanAmNz\n\n",
+        "isSuccess": true
+    }
+    ```
     Contents of response.json file for Failure :<br/>
   
-   {<br/>
-        "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",<br/>
-        "price": 0.000030000000000000004,<br/>
-        "error": "Command failed: solana transfer -k ./wallet/wallet.json 3tLbZqkECtj66aaLizJUusqbikMNtdi86iSey56L5eEA 4 --allow-unfunded-recipient\nError: Account 9vpsmXhZYMpvhCKiVoX5U8b1iKpfwJaFpPEEXF7hRm9N has insufficient funds for spend (4 SOL) + fee (0.000005 SOL)\nError: Account 9vpsmXhZYMpvhCKiVoX5U8b1iKpfwJaFpPEEXF7hRm9N has insufficient funds for spend (4 SOL) + fee (0.000005 SOL)\n",<br/>
-        "isSuccess": false<br/>
-    }<br/>
+  ```json
     
+   {
+        "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",
+        "price": 0.000030000000000000004,
+        "error": "Command failed: solana transfer -k ./wallet/wallet.json 3tLbZqkECtj66aaLizJUusqbikMNtdi86iSey56L5eEA 4 
+            --allow-unfunded-recipient\nError: Account 9vpsmXhZYMpvhCKiVoX5U8b1iKpfwJaFpPEEXF7hRm9N has insufficient funds for spend (4 SOL) + fee (0.000005)",
+        "isSuccess": false
+    }
+    
+    ```
+    
+ ## Need to work upon
+- Better error handling 
+- Use sendTransactionWithRetry
+    
+ ## License
+   [MIT](https://github.com/heisenberglit/AirdropSol/blob/main/LICENSE/)
+   
+ ## Contributing        
+   Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+    
+ ## Tip
+ 
+  If you found out it useful :  Send a tip to  - 87LZXRGmK5h6FCbaS9gHXZZQMaU7BKFEN5rQkRB1NeyT (SOLANA ADDRESS)
    
