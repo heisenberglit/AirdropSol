@@ -7,7 +7,8 @@ import {
     totalItemCounts,
     removeFromList,
     calculatePerWallet,
-    verifyBalance
+    verifyBalance,
+    sendSolToWallet
 } from './handler'
 
 import { processAirdrop }  from './giveaway-token';
@@ -56,6 +57,16 @@ programCommand('do_airdrop').option(
   ).action(async (directory, cmd) => {
     const { path, keypair, price , env} = cmd.opts();
     processAirdrop(keypair,price,env);
+});
+
+
+programCommand('send_sol').option(
+  '-p, --price <string>',
+  `Price per item`,
+  '--price  not provided',
+).action(async (directory, cmd) => {
+  const { path, keypair, price } = cmd.opts();
+  sendSolToWallet(price,keypair);
 });
 
 

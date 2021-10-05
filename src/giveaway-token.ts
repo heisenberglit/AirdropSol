@@ -43,7 +43,7 @@ async function processChunk() {
             //@ts-ignore
             success.pubKey  = to;
             //@ts-ignore
-            success.lamports = PRICE_PER_ITEM * item.count;
+            success.sol = PRICE_PER_ITEM * item.count;
             
             data.push(success);
         
@@ -56,11 +56,9 @@ async function processChunk() {
         console.log("Error : "+ ex);
           var err = {};
           //@ts-ignore
-          err.signature = signature;
-          //@ts-ignore
           err.pubKey  = to;
           //@ts-ignore
-          err.lamports = PRICE_PER_ITEM * item.count;
+          err.sol = PRICE_PER_ITEM * item.count;
           //@ts-ignore
           err.error = ex.message;
           
