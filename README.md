@@ -17,10 +17,10 @@ Need to work upon -
 This has been tested on Devnet only. 
 
 
-Must have installed : 
+Must have installed : <br/>
 
-Solana CLI
-NodeJS
+Solana CLI<br/>
+NodeJS<br/>
 
 
 How to use :
