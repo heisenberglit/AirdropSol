@@ -12,8 +12,8 @@ This has been tested on Devnet only.
 
 ## Must have installed
 
-Solana CLI<br/>
-NodeJS<br/>
+[Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools)<br/>
+[Node JS](https://nodejs.org/en/)<br/>
 
 
 ## How to use
@@ -58,24 +58,24 @@ NodeJS<br/>
   Contents of response.json file for Success :
    ```json
   
-   {
+   [{
         "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",
         "price": 0.01,
         "signature": "\nSignature: 3rtUax1eDJr6w8TJv35cE26qjuvpGfTwGC3xy8MbkEGo9iQeZvVyujpQtDpg6kSuKQxhNYWV3iLXe7TvCPanAmNz\n\n",
         "isSuccess": true
-    }
+    }]
     ```
     Contents of response.json file for Failure :<br/>
   
   ```json
     
-   {
+   [{
         "pubKey": "2mwMU2WTW5vG6z16xx68Ys5BNkmAe5voU7aHZwLbxdMA",
         "price": 0.000030000000000000004,
         "error": "Command failed: solana transfer -k ./wallet/wallet.json 3tLbZqkECtj66aaLizJUusqbikMNtdi86iSey56L5eEA 4 
             --allow-unfunded-recipient\nError: Account 9vpsmXhZYMpvhCKiVoX5U8b1iKpfwJaFpPEEXF7hRm9N has insufficient funds for spend (4 SOL) + fee (0.000005)",
         "isSuccess": false
-    }
+    }]
     
     ```
     
