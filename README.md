@@ -9,6 +9,11 @@ Need to work upon -
 - Use sendTransactionWithRetry
 
 
+This has been tested on Devnet only. 
+
+Issues :
+- Mainnet-Beta throws some error sometimes related to Node is behind 204 slots
+
 
 Commands
 
