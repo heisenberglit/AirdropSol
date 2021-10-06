@@ -47,11 +47,11 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
 ```
 - count_total_items - Counts the total number of items which is generally equals to collection size
 - remove_from_list - Create a JSON file with bunch of addresses which needs to be removed from this before processing. Add secondary wallet addresses <br/><br/>
-           ``` bash
-            Digital Eyes -  F4ghBzHFNgJxV4wEQDchU5i7n4XWWMBSaq7CuswGiVsr
-            Magic Eden - GUfCR9mK6azb9vcpsxgXyj7XRPAKJd4KMHTTVvtncGgp
-            Solanart -3D49QorJyNaL4rcpiynbuS3pRH4Y7EXEM6v6ZGaqfFGK
-            ```
+  ``` json
+          Digital Eyes - "F4ghBzHFNgJxV4wEQDchU5i7n4XWWMBSaq7CuswGiVsr"
+          Magic Eden -   "GUfCR9mK6azb9vcpsxgXyj7XRPAKJd4KMHTTVvtncGgp"
+          Solanart -     "3D49QorJyNaL4rcpiynbuS3pRH4Y7EXEM6v6ZGaqfFGK"
+   ```
   Like this and add addresses which you don't want to aidrop into this file
   
  ```json
