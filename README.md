@@ -28,7 +28,23 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
 
 ## How to use commands
 
-- create_compatible_format -Contact @statikdev for snaphot for the particular collection and then create a folder and use that path to create a compatible format to airdrop.
+- create_compatible_format -Contact @statikdev for snaphot for the particular collection and then create a folder and use that path to create a compatible format to airdrop or If you have a json file in this format then you can skip the first part and create a folder results and  create a json file in below format and name this file as airdrop_pubKeys.json
+ ``` JSON
+[
+    {
+        "pubKey": "8mmvKNsCiUnUXacDaMeoxA7PgtNiHqdsRDpBGPZyvST",
+        "count": 4
+    },
+    {
+        "pubKey": "ELPPaNSHKLMUXNEkmRazUonocDHjVVZCJ8NuQiLsGyu",
+        "count": 4
+    },
+    {
+        "pubKey": "3UvbPQZJM8vtYg28nRMgbdjfZL3YbGaepNikUwn2tQZ",
+        "count": 2
+    }
+]
+```
 - count_total_items - Counts the total number of items which is generally equals to collection size
 - remove_from_list - Create a JSON file with bunch of addresses which needs to be removed from this before processing. Add secondary wallet addresses <br/><br/>
             Digital Eyes -  F4ghBzHFNgJxV4wEQDchU5i7n4XWWMBSaq7CuswGiVsr<br/>
