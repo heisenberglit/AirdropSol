@@ -21,9 +21,9 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
 - yarn 
 - yarn build
 
-- Solana config get - To check which RPC you are connected to
-- Solana config set --url "mainnet-beta" - To connect to mainnet for usage
-- Solana config set --url "devnet" - To connect to devnet for usage
+- solana config get - To check which RPC you are connected to
+- solana config set --url "mainnet-beta" - To connect to mainnet for usage
+- solana config set --url "devnet" - To connect to devnet for usage
 
 
 ## How to use commands
