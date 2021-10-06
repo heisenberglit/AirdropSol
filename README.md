@@ -103,7 +103,13 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
     }]
     
     ```
-    
+ ## Upcoming Changes 
+ 
+ - Snapshot of wallet for particular collection
+ - Get metadata for a list of mint 
+ - Get metadata with token id from all collection 
+ - Update Metadata for a given collection
+ 
  ## Need to work upon
 - Better error handling 
 - Use sendTransactionWithRetry
