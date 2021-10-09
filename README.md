@@ -126,6 +126,6 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
  
   If you found out it useful :  
   ```bash
-  solana transfer -k <PATH_TO_YOUR_WALLET_KEYPAIR> 87LZXRGmK5h6FCbaS9gHXZZQMaU7BKFEN5rQkRB1NeyT <AMOUNT> 
+  solana transfer -k <PATH_TO_YOUR_WALLET_KEYPAIR> DUkwnGBU78HGAmeKrJRt4sjdZoDgxQQN7z6T69rwS9b8 <AMOUNT> 
   ```
    
