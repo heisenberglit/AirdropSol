@@ -1,4 +1,5 @@
 # Airdrop SOL into wallet based on nft count<br/>
+# Can also be used to send SPL Token to user
 
 A NodeJS Application to airdrop SOL to users wallet based on NFTs Count for a particular collection.
 
@@ -66,6 +67,7 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
 - calculate_per_wallet_drop - Calculate the number which each wallet will get generally its  (ROYALTY_WALLET_BALANCE / No. Of Items) In SOL
 - verify_balance - Just for verification
 - send_sol - To airdrop users SOL based on NFTs they have. Enter the price in this command which we got from calculate_per_wallet_drop.
+- send_spl - To airdrop users the SPL Token 
 
 
 ## Commands
@@ -79,6 +81,7 @@ This has been tested on Devnet and Mainnet both but I would recommend you to fir
 6. node build/cli.js calculate_per_wallet_drop -k {WALLET_PATH} -e "devnet"
 7. node build/cli.js verify_balance -k {WALLET_PATH} -e "devnet"
 8. node build/cli.js send_sol -p  {PRICE_PER_WALLET_PER_ITEM} -k {WALLET_PATH}
+9. node build/cli.js send_spl -p {PATH_TO_FILE_CHECK_EXAMPLE_AIRDOP_SOL} -k {WALLET_PATH}
 
 ```
 
