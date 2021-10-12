@@ -14,8 +14,6 @@ import {
 
 import {sendSPLToWallet} from  './airdropSPLToken'
 
-import { processAirdrop }  from './giveaway-token';
-
 program.version('0.0.1');
 
 
@@ -55,16 +53,6 @@ programCommand('calculate_per_wallet_drop').action(async (directory, cmd) => {
 programCommand('verify_balance').action(async (directory, cmd) => {
     const { path, keypair, env } = cmd.opts();
     verifyBalance(keypair,env);
-});
-
-
-programCommand('do_airdrop').option(
-    '-p, --price <string>',
-    `Price per item`,
-    '--price  not provided',
-  ).action(async (directory, cmd) => {
-    const { path, keypair, price , env} = cmd.opts();
-    processAirdrop(keypair,price,env);
 });
 
 
