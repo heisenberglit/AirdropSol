@@ -12,6 +12,8 @@ import {
     countTotalWallet
 } from './handler'
 
+import {sendSPLToWallet} from  './airdropSPLToken'
+
 import { processAirdrop }  from './giveaway-token';
 
 program.version('0.0.1');
@@ -75,6 +77,14 @@ programCommand('send_sol').option(
   sendSolToWallet(price,keypair);
 });
 
+programCommand('send_spl').option(
+  '-p, --path <path>',
+  `Path to file`,
+  '--file not provided',
+).action(async (directory, cmd) => {
+  const { path, keypair } = cmd.opts();
+  sendSPLToWallet(path,keypair);
+});
 
 function programCommand(name: string) {
     return program
