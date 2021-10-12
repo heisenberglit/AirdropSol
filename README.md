@@ -1,5 +1,4 @@
-# Airdrop SOL into wallet based on nft count<br/>
-# Can also be used to send SPL Token to user
+# Airdrop SOL into wallet based on nft count or To send SPL Token to user
 
 A NodeJS Application to airdrop SOL to users wallet based on NFTs Count for a particular collection.
 
